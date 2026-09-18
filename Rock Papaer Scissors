@@ -1,0 +1,21 @@
+import random
+
+choose = ["paper", "stone", "scissor"]
+computer = random.choice(choose)
+
+move = input("choose one move from paper , stone , scissor ")
+print("computer choose: " + computer)
+print("you choose: " + move)
+
+if move == "paper" and computer == "stone":
+    print("you win")
+
+elif move == "stone" and computer == "scissor":
+    print("you win")
+
+elif move == "scissor" and computer == "paper":
+    print("you win")
+
+else:
+    print("you lose")
+
